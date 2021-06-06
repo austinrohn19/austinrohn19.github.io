@@ -25,7 +25,7 @@
     margin: auto;
 }
 
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@
     color: black;
 }
 
-.navbar .menu li{
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
@@ -179,5 +179,16 @@
         
     .home .home-content .text-3{
          font-size: 32px;
+    }       
+}
+
+@media (max-width: 500px){
+
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+        
+    .home .home-content .text-3{
+         font-size: 27px;
     }       
 }
