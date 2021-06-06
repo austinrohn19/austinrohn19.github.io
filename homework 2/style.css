@@ -106,7 +106,11 @@
 
 .home .home-content a{
     display: inline-block;
-    background: teal;
+    background:red;
+    color:black;
+    font-size: 25px;
+    padding: 12px 36px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 /* responsive media query start */
