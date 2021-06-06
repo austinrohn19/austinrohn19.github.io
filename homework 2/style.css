@@ -136,11 +136,11 @@
         left: 0;
     }
 
-    .navbar .menu li{
+    .navbar .menu li {
         display: block;
     }
 
-    .navbar .menu li a{
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
