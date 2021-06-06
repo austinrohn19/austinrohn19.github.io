@@ -121,6 +121,86 @@
     background: none;
 }
 
+/*about me section style*/
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif; 
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translate(-50%) ;
+}
+
+.about .title::before {
+    content: "Who I am";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: teal;
+    padding: 5px;
+    background: #fff;
+    transform: translate(-50%) ;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive media query start */
 @media (max-width: 1104px){
     .home .max-width{
