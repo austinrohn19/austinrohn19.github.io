@@ -111,7 +111,11 @@
         display: block;
         z-index: 999;
     }
-    
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+  
     .max-width {
         padding: 0 50px;
     } 
@@ -120,12 +124,17 @@
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
         background: #fff;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     } 
+
+    .navbar .menu.active {
+        left: 0;
+    }
 
     .navbar .menu li{
         display: block;
