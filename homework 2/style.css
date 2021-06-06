@@ -158,6 +158,10 @@
         font-size: 25px;
     }
 
+    .navbar .menu li a:hover {
+        color: #fff;
+    }
+
     .home .home-content .text-2{
         font-size: 70px;
     }
