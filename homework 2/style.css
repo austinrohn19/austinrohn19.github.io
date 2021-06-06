@@ -182,6 +182,11 @@
     .home .home-content .text-3{
         font-size: 35px;
     }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
 }
 
 @media (max-width: 690px){
@@ -196,7 +201,11 @@
         
     .home .home-content .text-3{
          font-size: 32px;
-    }       
+    } 
+    
+    .home .home-content a{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px){
