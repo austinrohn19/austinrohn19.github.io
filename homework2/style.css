@@ -378,7 +378,7 @@ section{
         width: 100%;
         margin: 0 auto 80px;
     }
-    
+}    
 
 @media (max-width: 1300px){
     .home .max-width{
@@ -516,6 +516,7 @@ section{
         justify-content: center;
         width: 100%;
         margin: 0 auto 40px;
+    }
 }
 
 @media (max-width: 500px){
@@ -532,4 +533,4 @@ section{
         width: 100%;
         margin: 0 auto 25px; 
     } 
-}    
+} 
