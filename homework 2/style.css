@@ -75,7 +75,7 @@
 /* home section styling */
 .home{
     display: flex;
-    background-image: url("../homework2/background.jpg");
+    background-image: url("../homework2/images/background.jpg");
     height: 100vh;
     color:black;
     min-height: 500px;
@@ -265,14 +265,14 @@ section{
 
 .work .work-content .card {
     display: inline-block;
-    width: calc(33% - 20px);
+    width: calc(33%);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     
 }
-.work .work-content .card .box-1{
+.work .work-content .card .box-1 img{
     margin-bottom: 50px;
 }
 
@@ -281,14 +281,9 @@ section{
     border-radius: 6px;
 }
 
-.work .work-content .card .box-3{
+.work .work-content .card .box-3 img{
     margin-bottom: 40px;
 }
-
-
-
-
-
 
 .work .work-content .card .text a {
     font-size: 25px;
@@ -308,9 +303,22 @@ section{
 }
 
 /* responsive media query start */
+@media (max-width: 1335px){
+    .work .work-content .card {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+    
+
 @media (max-width: 1300px){
     .home .max-width{
         margin-left: 0px;
+    }
+    
+    .work .max-width{
+        margin-left: 0;
     }
 }
 
@@ -399,6 +407,12 @@ section{
         flex: 100%;
     }
 
+    .work .work-content .card {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 60px;
+    }
 }
 
 @media (max-width: 690px){
@@ -418,6 +432,12 @@ section{
     .home .home-content a{
         font-size: 20px;
     }
+
+    .work .work-content .card  {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 40px;
 }
 
 @media (max-width: 500px){
@@ -428,5 +448,10 @@ section{
         
     .home .home-content .text-3{
          font-size: 27px;
-    }       
+    }
+    .work .work-content .card  {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 25px;      
 }
