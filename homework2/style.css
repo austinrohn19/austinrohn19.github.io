@@ -351,10 +351,6 @@ section {
     transform: translateX(-50%) ;
 }
 
-.contact .contact-content .column {
-    width: calc(50% - 30px);
-}
-
 .contact .contact-content .text {
     font-size: 20px; 
     font-weight: 600;
@@ -373,6 +369,7 @@ section {
     display: flex;
     height: 65px;
     align-items: center;
+    width: calc(50% - 30px)
 }
 .contact .contact-content .left .head {
     font-size: 26px;
