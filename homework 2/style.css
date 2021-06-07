@@ -427,7 +427,6 @@ section{
 }
 
 @media (max-width: 690px){
-    
     .max-width{
         padding: 0 23px;
     }
@@ -452,18 +451,17 @@ section{
 }
 
 @media (max-width: 500px){
-
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 50px;
     }
         
-    .home .home-content .text-3{
+    .home .home-content .text-3 {
          font-size: 27px;
     }
-    .work .work-content .card  {
+    .work .work-content .card {
         display: inline-block;
         justify-content: center;
         width: 100%;
         margin: 0 auto 25px; 
-    }     
-}
+    } 
+}    
