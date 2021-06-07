@@ -304,15 +304,21 @@ section{
 
 /* Contact Me section */
 
-section{
+section {
     padding: 100px 0;
 }
 
-.contact{
+.contact {
     font-family: 'poppins', sans-serif;
 }
 
-.contact .title{
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -367,6 +373,9 @@ section{
     display: flex;
     height: 65px;
     align-items: center;
+}
+.contact .contact-content .left .head {
+    font-size: 26px;
 }
 
 
