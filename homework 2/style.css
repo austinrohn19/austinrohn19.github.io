@@ -147,28 +147,74 @@ section{
     width: 180px;
     height: 3px;
     background: #111;
-    transform: translate(-50%) ;
+    transform: translateX(-50%) ;
 }
 
-.about .title::before {
+.about .title::after {
     content: "Who I am";
     position: absolute;
-    bottom: -7px;
+    bottom: -12px;
     left: 50%;
     font-size: 20px;
     color: teal;
     padding: 5px;
     background: #fff;
-    transform: translate(-50%) ;
+    transform: translateX(-50%) ;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
 }
 
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
+    border-radius: 8px;
+    border: solid 3px teal;
 }
 
+.about .about-content .right{
+    width: 55%;
+}
 
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.about .about-content .right .text span{
+    color: teal;
+}
+
+.about .about-content .right p{
+    text-align: justify;   
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background:red;
+    color:black;
+    font-size: 20px;
+    padding: 2px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color:red;
+    background: none;
+}
 
 
 
