@@ -10,9 +10,15 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
     padding: 15px 0;
     background: teal;
-    font-family: 'ubuntu', sans-serif;
 }
 
 .max-width {
@@ -21,7 +27,7 @@
     margin: auto;
 }
 
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,21 +39,505 @@
     font-weight: 600;
 }
 
+.navbar .logo a span {
+    color: black;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
 
-.navbar .menu li a {
-    color: #fff;
+.navbar .menu li a{
+    color:black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: teal;
+}
+
+.navbar.sticky .menu li a:hover{
+    color:#fff;
+}
+
+/*menu button styling */
+.menu-btn{
+    color:black;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
 /* home section styling */
-.home {
+.home{
     display: flex;
-    background: url("images/background") no-repeat center;
+    background-image: url("../homework2/images/background.jpg");
     height: 100vh;
+    color:black;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
 }
+
+.home .max-width {
+    margin: auto 0 auto 40px; 
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color:red;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background:red;
+    color:black;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color:red;
+    background: none;
+}
+
+/*about me section style*/
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif; 
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%) ;
+}
+
+.about .title::after {
+    content: "Who I am";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: teal;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%) ;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: solid 3px teal;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.about .about-content .right .text span{
+    color: teal;
+}
+
+.about .about-content .right p{
+    text-align: justify;   
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background:red;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color:red;
+    background: none;
+}
+
+/*Work section Styling */
+section{
+    padding: 100px 0;
+}
+
+.work{
+    font-family: 'poppins', sans-serif;
+    background: teal;
+    color: #fff;
+}
+
+.work .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif; 
+}
+
+.work .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%) ;
+}
+
+.work .title::after {
+    content: "References";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    background: teal;
+    transform: translateX(-50%) ;
+}
+
+.work .work-content .card {
+    display: inline-block;
+    width: calc(33%);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    
+}
+.work .work-content .card .box-1 img{
+    margin-bottom: 50px;
+}
+
+.work .work-content .card img {
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.work .work-content .card .box-3 img{
+    margin-bottom: 40px;
+}
+
+.work .work-content .card .text a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff; 
+    background:red;
+    padding: 6px 10px;
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+
+.work .work-content .card .text a:hover {
+    color:#fff;
+    background: none;
+}
+
+/* Contact Me section */
+
+section{
+    padding: 100px 0;
+}
+
+.contact{
+    font-family: 'poppins', sans-serif;
+}
+
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu' , sans-serif; 
+}
+
+.contact .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%) ;
+}
+
+.contact .title::after {
+    content: "Get in Touch";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color:teal;
+    padding: 5px;
+    background:#fff;
+    transform: translateX(-50%) ;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px; 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.contact .contact-content .left .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+
+/* responsive media query start */
+@media (max-width: 1335px){
+    .work .work-content .card {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+    
+
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    
+    .work .max-width{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    } 
+}
+
+@media (max-width: 900px){
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    } 
+
+    .menu-btn i.active:before {
+        content:"\f00d"; 
+    }
+
+    .max-width {
+        padding: 0 50px;
+    } 
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: teal;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    } 
+
+    .navbar .menu.off {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: teal;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    } 
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width {
+        max-width: 800px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    .work .work-content .card {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 60px;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+            
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+        
+    .home .home-content .text-3{
+         font-size: 32px;
+    } 
+    
+    .home .home-content a{
+        font-size: 20px;
+    }
+
+    .work .work-content .card  {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 40px;
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+        
+    .home .home-content .text-3 {
+         font-size: 27px;
+    }
+    .work .work-content .card {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 25px; 
+    } 
+}    
