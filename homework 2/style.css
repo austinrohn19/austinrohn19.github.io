@@ -464,5 +464,6 @@ section{
         display: inline-block;
         justify-content: center;
         width: 100%;
-        margin: 0 auto 25px;      
+        margin: 0 auto 25px; 
+    }     
 }
