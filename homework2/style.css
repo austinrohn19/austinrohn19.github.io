@@ -76,6 +76,7 @@
 .home{
     display: flex;
     background-image: url("../homework2/images/background.jpg");
+    background-repeat: no-repeat;
     height: 100vh;
     color:black;
     min-height: 500px;
